@@ -309,12 +309,20 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8451312500130346014, guid: 81224c4cdbd2a0d458ce6a025c976900, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8451312500130346014, guid: 81224c4cdbd2a0d458ce6a025c976900, type: 3}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1566490986}
+      objectReference: {fileID: 1299871670}
     - target: {fileID: 8451312500130346014, guid: 81224c4cdbd2a0d458ce6a025c976900, type: 3}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: 
+      value: SaveVolume
+      objectReference: {fileID: 0}
+    - target: {fileID: 8451312500130346014, guid: 81224c4cdbd2a0d458ce6a025c976900, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: SoundManager, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 8451312500534288451, guid: 81224c4cdbd2a0d458ce6a025c976900, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -840,7 +848,7 @@ GameObject:
   - component: {fileID: 1299871672}
   m_Layer: 5
   m_Name: Sound Manager
-  m_TagString: Audio
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -858,7 +866,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   controlVolume: {fileID: 402296338}
-  audios: []
+  audios:
+  - {fileID: 0}
 --- !u!224 &1299871671
 RectTransform:
   m_ObjectHideFlags: 0
