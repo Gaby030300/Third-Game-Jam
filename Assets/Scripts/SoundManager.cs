@@ -5,13 +5,22 @@ using UnityEngine.UI;
 
 public class SoundManager : MonoBehaviour
 {
+    public static SoundManager instance;
+    public AudioSource audioSource;
+
+    [Header("Audio Effects")]
+    public AudioClip swipeEffect;
+
     public Slider controlVolume;    
 
-    public GameObject[] audios;         
+    public GameObject[] audios;
+ 
     private void Start()
     {
+        audioSource = GetComponent<AudioSource>(); 
         audios = GameObject.FindGameObjectsWithTag("Audio");
-        controlVolume.value = PlayerPrefs.GetFloat("volumenSave", 1f); 
+        controlVolume.value = PlayerPrefs.GetFloat("volumenSave", 1f);
+       
     }
     private void Update()
     {
