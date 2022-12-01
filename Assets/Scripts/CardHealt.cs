@@ -7,23 +7,25 @@ public class CardHealt : MonoBehaviour
     public Material matDissolveEdge;
     public float health;
     public float maxHealth;
-
-
-
-
+    public float healthToLose;
     void Start()
     {
         matDissolveEdge.SetFloat("_Progress",1.0f);
     }
 
-    // Update is called once per frame
-    void Update()
+    [ContextMenu("Disolve Card")]
+    public void DisolveCard()
     {
-        if(Input.GetKeyDown(KeyCode.Space))
-        {
-            health -= 5;
-            matDissolveEdge.SetFloat("_Progress", health / maxHealth);
+        StartCoroutine(EffectDisolve());
+    }
 
+    private IEnumerator EffectDisolve()
+    {
+        while(health >= 0)
+        {
+            health -= healthToLose;
+            matDissolveEdge.SetFloat("_Progress", health / maxHealth);
+            yield return new WaitForSeconds(0.05f);
         }
     }
 }
