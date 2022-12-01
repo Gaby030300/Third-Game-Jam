@@ -148,6 +148,7 @@ MonoBehaviour:
   matDissolveEdge: {fileID: 2100000, guid: 5a0e9086bd6bbf245bd506367fc008db, type: 2}
   health: 100
   maxHealth: 100
+  healthToLose: 0
 --- !u!4 &109144093 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4537420558883232, guid: d17bd81f00e4eb843a71e73358112786, type: 3}
@@ -2673,11 +2674,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 2e9fbaa8754d8824b8ce8b35b75e7a2c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -11.1
+      value: -11.06
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 2e9fbaa8754d8824b8ce8b35b75e7a2c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 23.8
+      value: 22.44
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 2e9fbaa8754d8824b8ce8b35b75e7a2c, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2685,23 +2686,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 2e9fbaa8754d8824b8ce8b35b75e7a2c, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.00000035595667
+      value: -0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 2e9fbaa8754d8824b8ce8b35b75e7a2c, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.70710677
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 2e9fbaa8754d8824b8ce8b35b75e7a2c, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.00000034628545
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 2e9fbaa8754d8824b8ce8b35b75e7a2c, type: 3}
-      propertyPath: m_LocalRotation.z
       value: 0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 2e9fbaa8754d8824b8ce8b35b75e7a2c, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
+      propertyPath: m_LocalRotation.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 2e9fbaa8754d8824b8ce8b35b75e7a2c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -180
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 2e9fbaa8754d8824b8ce8b35b75e7a2c, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -2714,7 +2715,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: 2e9fbaa8754d8824b8ce8b35b75e7a2c, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 5a0e9086bd6bbf245bd506367fc008db, type: 2}
+      objectReference: {fileID: 2100000, guid: 28e2abf37f0df984e8b007150eb13e46, type: 2}
     - target: {fileID: 919132149155446097, guid: 2e9fbaa8754d8824b8ce8b35b75e7a2c, type: 3}
       propertyPath: m_Name
       value: CardModel
