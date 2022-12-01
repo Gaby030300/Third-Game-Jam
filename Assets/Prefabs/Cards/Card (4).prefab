@@ -26,7 +26,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6687074215972611355}
-  m_LocalRotation: {x: -0.7071072, y: 0.0000003559565, z: 0.7071065, w: -0.00000034628567}
+  m_LocalRotation: {x: -0.7071068, y: -0, z: 0.7071068, w: 0}
   m_LocalPosition: {x: 15.369999, y: 22.8, z: -21.21}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -96,7 +96,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a29a18a7a22e47741a5c436a8361ebf2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  matDissolveEdge: {fileID: 2100000, guid: 5a0e9086bd6bbf245bd506367fc008db, type: 2}
+  matDissolveEdge: {fileID: 2100000, guid: a396ff11d9b3d3b4a9a00b8c7c7fbd4b, type: 2}
   health: 100
   maxHealth: 100
   healthToLose: 2
