@@ -8,3 +8,7 @@ Match items and get the best time!
 
 # ACCESS TO THE ITCH.IO VIDEO GAME
 LINK TO ACCESS: https://gaby030300.itch.io/legacy-of-the-cat-tarot
+
+# FINAL PRESENTATION DOCUMENT
+[Legacy of the Cat Tarot.pdf](https://github.com/Gaby030300/Third-Game-Jam/files/10137446/Legacy.of.the.Cat.Tarot.pdf)
+
