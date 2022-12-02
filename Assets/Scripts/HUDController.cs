@@ -14,7 +14,7 @@ public class HUDController : MonoBehaviour
 
     public void OnPlayButton()
     {
-        SceneManager.LoadScene("2");
+        SceneManager.LoadScene("Game");
     }
     public void OnCreditsButton()
     {
@@ -27,10 +27,16 @@ public class HUDController : MonoBehaviour
     public void OnSoundButton()
     {
         volumeSystem.gameObject.SetActive(true);
+        GameManager.CanClick = false;
     }
     public void OnCloseButton()
     {
         volumeSystem.gameObject.SetActive(false);
+        GameManager.CanClick = true;
+    }
+    public void OnRestartButton()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
 }
