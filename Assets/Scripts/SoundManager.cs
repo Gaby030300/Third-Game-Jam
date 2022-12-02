@@ -31,4 +31,5 @@ public class SoundManager : MonoBehaviour
     {
         PlayerPrefs.SetFloat("volumenSave", controlVolume.value); 
     }
+    
 }

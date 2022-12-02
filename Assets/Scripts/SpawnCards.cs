@@ -11,7 +11,7 @@ public class SpawnCards : MonoBehaviour
 
     private void Awake()
     {
-        Spawn();
+        StartCoroutine (DelaySpawncards());
     }
 
     [ContextMenu("Spawn Cards")]
@@ -60,5 +60,12 @@ public class SpawnCards : MonoBehaviour
                 }
             }
         }
+    }
+
+    private IEnumerator DelaySpawncards()
+    {
+        yield return new WaitForSeconds(1);
+        Spawn();
+
     }
 }

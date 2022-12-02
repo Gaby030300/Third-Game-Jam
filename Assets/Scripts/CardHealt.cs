@@ -8,6 +8,7 @@ public class CardHealt : MonoBehaviour
     public float health;
     public float maxHealth;
     public float healthToLose;
+    public ParticleSystem particles;
     void Start()
     {
         matDissolveEdge.SetFloat("_Progress",1.0f);
@@ -27,7 +28,9 @@ public class CardHealt : MonoBehaviour
             matDissolveEdge.SetFloat("_Progress", health / maxHealth);
             yield return new WaitForSeconds(0.05f);
         }
+        particles.Play();
         GameManager.CanClick = true;
+        yield return new WaitForSeconds(2.5f);
         gameObject.SetActive(false);
     }
 }
