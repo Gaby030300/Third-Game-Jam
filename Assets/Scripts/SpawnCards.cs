@@ -7,11 +7,11 @@ public class SpawnCards : MonoBehaviour
     [SerializeField] List<GameObject> cards;
     [SerializeField] List<GameObject> slots;
 
-    int[] values;
+    public int[] values;
 
     private void Awake()
     {
-        values = new int[5];
+        Spawn();
     }
 
     [ContextMenu("Spawn Cards")]
@@ -42,16 +42,20 @@ public class SpawnCards : MonoBehaviour
     {
         int randomNumber;
         for(int i = 0; i < 5; i++)
-        {
+        {            
             randomNumber = Random.Range(0, 10);
             values[i] = randomNumber;
-            for(int j=0;j<5; j++)
-            {
+            for(int j = 0; j < 5; j++)
+            {                
                 if (j != i)
                 {
                     if (values[j] == values[i])
                     {
                         i--;
+                        if (i <= 0)
+                        {
+                            i = 0;
+                        }
                     }
                 }
             }

@@ -27,5 +27,7 @@ public class CardHealt : MonoBehaviour
             matDissolveEdge.SetFloat("_Progress", health / maxHealth);
             yield return new WaitForSeconds(0.05f);
         }
+        GameManager.CanClick = true;
+        gameObject.SetActive(false);
     }
 }
