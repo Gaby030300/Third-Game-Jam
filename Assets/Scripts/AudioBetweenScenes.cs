@@ -12,6 +12,7 @@ public class AudioBetweenScenes : MonoBehaviour
             instance = this;
             DontDestroyOnLoad(instance);
         }
+       
     }
 
 }
