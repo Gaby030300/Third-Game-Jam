@@ -13,6 +13,7 @@ public class GameManager : MonoBehaviour
     AudioSource audiosource;
     public AudioClip fireSound;
     public AudioClip winSound;
+    public AudioClip errorSound;
 
 
     private void Start()
@@ -56,6 +57,7 @@ public class GameManager : MonoBehaviour
         cards[0].CardDown();
         cards[1].CardDown();        
         cards.Clear();
+        audiosource.PlayOneShot(errorSound, 1);
         CanClick = true;
     }
     IEnumerator WinScreen()

@@ -5807,6 +5807,10 @@ PrefabInstance:
       propertyPath: winScreen
       value: 
       objectReference: {fileID: 448717364}
+    - target: {fileID: 787386647376675150, guid: 589f3a3f6ecb18348b57c3e92354b58e, type: 3}
+      propertyPath: errorSound
+      value: 
+      objectReference: {fileID: 8300000, guid: a7cbfb3cf18a4fe42a28f97533235c20, type: 3}
     - target: {fileID: 5880716708718559883, guid: 589f3a3f6ecb18348b57c3e92354b58e, type: 3}
       propertyPath: cards.Array.size
       value: 10
